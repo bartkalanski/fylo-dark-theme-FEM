@@ -23,9 +23,13 @@ html {
 body {
     line-height: 1.6;
     font-size: 1.4rem;
+    font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
 
 .container {
     display: grid;
+    grid-template-rows: 100vh repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    background: $dark-blue-main;
 }
