@@ -1,7 +1,9 @@
 .header {
     font-family: 'Raleway', sans-serif;
     grid-column: 1/7;
+    position: relative;
     background: $dark-blue-intro;
+    margin-bottom: 1rem;
 }
 
 .nav {
@@ -23,6 +25,7 @@
         align-items: center;
         justify-content: flex-end;
         font-size: 1.3rem;
+        cursor: pointer;
     }
     &__list-item {
         color: $white;
@@ -33,6 +36,15 @@
     }
 }
 
+.background-image {
+    position: absolute;
+    height: auto;
+    width: 120rem;
+    transform: translateY(-30rem);
+    right: -22rem;
+    z-index: 1;
+}
+
 .landing {
     width: 100%;
     display: flex;
@@ -41,6 +53,8 @@
     align-items: center;
     text-align: center;
     color: $white;
+    position: relative;
+    z-index: 10;
     &__illustraition {
         margin-top: 1rem;
         width: 80vw;
@@ -64,7 +78,7 @@
         cursor: pointer;
         transition: all .2s;
         &:hover {
-            background: $dark-blue-footer;
+            background: linear-gradient(to right, hsl(176, 50%, 50%), hsl(198, 50%, 50%))
         }
     }
 }
