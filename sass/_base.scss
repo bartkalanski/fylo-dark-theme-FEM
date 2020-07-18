@@ -29,7 +29,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: max-content max-content repeat(4, 1fr);
+    grid-template-rows: (6, max-content);
     grid-template-columns: repeat(6, 1fr);
     background: $dark-blue-main;
 }
