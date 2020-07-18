@@ -44,3 +44,20 @@
         font-size: 1.2rem;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 6rem 0;
+        &__quotes {
+            top: -0.9rem;
+            left: 10.3rem;
+        }
+        &__container {
+            margin: 2rem;
+            width: 35rem;
+        }
+    }
+}

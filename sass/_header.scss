@@ -1,84 +1,110 @@
-.header {
-    font-family: 'Raleway', sans-serif;
-    grid-column: 1/7;
-    position: relative;
-    background: $dark-blue-intro;
-    margin-bottom: 1rem;
-}
-
-.nav {
-    width: 100%;
-    padding: 1rem;
-    margin: 1.5rem;
-    display: flex;
-    align-items: center;
-    &__logo {
-        display: block;
-        height: auto;
-        width: 9rem;
-    }
-    &__list {
-        width: 100%;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        font-size: 1.3rem;
-        cursor: pointer;
-    }
-    &__list-item {
-        color: $white;
-        margin: 1rem;
-    }
-    &__list-item:last-child {
-        margin-right: 3rem;
-    }
-}
-
-.background-image {
-    position: absolute;
-    height: auto;
-    width: 120rem;
-    transform: translateY(-30rem);
-    right: -22rem;
-    z-index: 1;
-}
-
-.landing {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: $white;
-    position: relative;
-    z-index: 10;
-    &__illustraition {
-        margin-top: 1rem;
-        width: 80vw;
-    }
-    &__header {
-        font-weight: 700;
-        font-size: 2.3rem;
-        margin: 2rem;
-    }
-    &__text {
-        margin: 0 2rem 2rem 2rem;
-    }
-    &__btn {
-        background: $cyan;
-        color: $white;
-        font-size: 1.5rem;
-        border: none;
-        border-radius: 30px;
-        margin-top: 1rem;
-        padding: 2rem 9rem;
-        cursor: pointer;
-        transition: all .2s;
-        &:hover {
-            background: linear-gradient(to right, hsl(176, 50%, 50%), hsl(198, 50%, 50%))
-        }
-    }
-}
+ .header {
+     font-family: 'Raleway', sans-serif;
+     grid-column: 1/7;
+     position: relative;
+     background: $dark-blue-intro;
+     margin-bottom: 1rem;
+ }
+ 
+ .nav {
+     width: 100%;
+     padding: 1rem;
+     margin: 1.5rem;
+     display: flex;
+     align-items: center;
+     &__logo {
+         display: block;
+         height: auto;
+         width: 9rem;
+     }
+     &__list {
+         width: 100%;
+         list-style: none;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: flex-end;
+         font-size: 1.3rem;
+         cursor: pointer;
+     }
+     &__list-item {
+         color: $white;
+         margin: 1rem;
+     }
+     &__list-item:last-child {
+         margin-right: 3rem;
+     }
+ }
+ 
+ .background-image {
+     position: absolute;
+     height: auto;
+     width: 80rem;
+     right: 0;
+     transform: translateY(-30rem);
+     overflow: hidden;
+     z-index: 1;
+ }
+ 
+ .landing {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: $white;
+     position: relative;
+     z-index: 10;
+     &__illustraition {
+         margin-top: 1rem;
+         width: 80vw;
+     }
+     &__header {
+         font-weight: 700;
+         font-size: 2.3rem;
+         margin: 2rem;
+     }
+     &__text {
+         margin: 0 2rem 2rem 2rem;
+     }
+     &__btn {
+         background: $cyan;
+         color: $white;
+         font-size: 1.5rem;
+         border: none;
+         border-radius: 30px;
+         margin-top: 1rem;
+         padding: 2rem 9rem;
+         cursor: pointer;
+         transition: all .2s;
+         &:hover {
+             background: linear-gradient(to right, hsl(176, 50%, 50%), hsl(198, 50%, 50%))
+         }
+     }
+ }
+ 
+ @media screen and (min-width: 1200px) {
+     .nav {
+         padding: 2rem;
+         margin: 1.5rem 2.5rem;
+         &__logo {
+             width: 13rem;
+         }
+         &__list {
+             font-size: 1.6rem;
+         }
+         &__list-item {
+             margin: 1.5rem;
+         }
+     }
+     .landing {
+         &__illustraition {
+             margin-top: 1rem;
+             width: 50vw;
+         }
+     }
+     .background-image {
+         width: 90rem;
+     }
+ }

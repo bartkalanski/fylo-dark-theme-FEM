@@ -22,9 +22,12 @@ html {
 
 body {
     line-height: 1.6;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+    @media screen and (min-width: 1200px) {
+        font-size: 1.4rem;
+    }
 }
 
 .container {

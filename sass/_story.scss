@@ -7,12 +7,19 @@
     justify-content: center;
     align-items: center;
     color: $white;
+    &__container {
+        width: 100%;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     &__image {
         height: auto;
         width: 80vw;
     }
     &__header {
-        margin: 3rem 0;
+        margin: 1rem 4.25rem;
     }
     &__text {
         margin: 1rem 4.25rem;
@@ -29,5 +36,31 @@
     }
     &__link-icon {
         margin: 0 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .story {
+        flex-direction: row;
+        margin: 4rem 4rem;
+        &__image {
+            height: auto;
+            width: 40vw;
+        }
+        &__container {
+            display: flex;
+            flex-direction: column;
+            text-align: flex-start;
+            justify-content: flex-start;
+            width: 40vw;
+        }
+        &__header {
+            font-size: 3rem;
+            margin: 1rem 4.25rem;
+            width: 70%;
+        }
+        &__link {
+            margin: 2rem 4.25rem;
+        }
     }
 }
