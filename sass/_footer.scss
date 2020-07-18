@@ -1,5 +1,71 @@
 .footer {
     grid-column: 1/7;
     width: 100%;
+    margin: 0 auto;
     background: $dark-blue-footer;
+    color: $white;
+    display: grid;
+    grid-template-rows: repeat(12, max-content);
+    grid-template-columns: repeat(8, 1fr);
+    grid-row-gap: 3rem;
+    &__logo {
+        display: block;
+        height: auto;
+        width: 15rem;
+        margin-left: 5rem;
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+    &__info {
+        grid-column: 1/6;
+        grid-row: 2/4;
+        margin-left: 3rem;
+        display: grid;
+        grid-template-rows: 1fr repeat(2, max-content);
+        grid-template-columns: max-content 1fr;
+        grid-row-gap: 1rem;
+    }
+    &__info-icon {
+        margin-right: 2rem;
+    }
+    &__nav-top {
+        grid-column: 1/2;
+        grid-row: 4/8;
+        margin-left: 3rem;
+        display: grid;
+        grid-row-gap: 1rem;
+    }
+    &__nav-bottom {
+        grid-column: 1/2;
+        grid-row: 8/10;
+        margin-left: 3rem;
+        display: grid;
+        grid-row-gap: 1rem;
+    }
+    &__socials {
+        grid-column: 3/5;
+        grid-row: 11/12;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__socials-item {
+        border: solid 0.3px $white;
+        border-radius: 50%;
+        padding: 0.25rem;
+        margin: 0.5rem;
+    }
+    i {
+        color: white;
+        height: auto;
+        width: 1.2rem;
+        margin: 0.25rem;
+    }
+}
+
+.attribution {
+    grid-column: 1/8;
+    grid-row: 12;
+    text-align: center;
 }
