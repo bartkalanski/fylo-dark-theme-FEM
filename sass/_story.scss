@@ -1,3 +1,33 @@
 .story {
     grid-column: 1/7;
+    width: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    &__image {
+        height: auto;
+        width: 80vw;
+    }
+    &__header {
+        margin: 3rem 0;
+    }
+    &__text {
+        margin: 1rem 4.25rem;
+    }
+    &__link {
+        align-self: flex-start;
+        margin: 0 4.25rem;
+        color: hsl(176, 45%, 54%);
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        border-bottom: 1.5px solid hsl(176, 45%, 54%);
+        padding-bottom: 3px;
+    }
+    &__link-icon {
+        margin: 0 0.5rem;
+    }
 }
